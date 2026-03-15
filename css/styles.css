@@ -92,7 +92,7 @@ body {
 .title {
   font-size: clamp(0.85rem, 3vw, 1rem);
   font-weight: 700;
-  color: #a09080;
+  color: var(--beige);
   letter-spacing: 0.01em;
 }
 
