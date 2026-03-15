@@ -164,6 +164,17 @@ body {
   font-size: clamp(0.85rem, 3vw, 1rem);
   font-weight: 500;
   color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.contact-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--beige);
 }
 
 /* ── SAVE CONTACT ───────────────────────── */
