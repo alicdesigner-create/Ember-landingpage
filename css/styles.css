@@ -59,16 +59,16 @@ body {
 /* ── HERO ───────────────────────────────── */
 
 .hero {
-  background: var(--beige);
+  background: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  /* rounded only on top corners — card clips the rest */
+  padding: 32px 40px 24px;
 }
 
 .hero-logo {
   width: 100%;
+  max-width: 320px;
   height: auto;
   display: block;
 }
