@@ -141,7 +141,7 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--gray-circle);
+  background: var(--beige);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,13 +150,13 @@ body {
 }
 
 .contact-item:hover .contact-icon {
-  background: #d4ccc4;
+  background: #b07828;
 }
 
 .contact-icon svg {
   width: 22px;
   height: 22px;
-  stroke: #6b6258;
+  stroke: var(--white);
   stroke-width: 1.8;
 }
 
