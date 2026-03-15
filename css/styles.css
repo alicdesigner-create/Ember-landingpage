@@ -78,6 +78,7 @@ body {
 .identity {
   background: var(--dark);
   padding: 14px 20px 16px;
+  text-align: center;
 }
 
 .name {
