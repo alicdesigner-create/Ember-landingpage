@@ -1,4 +1,25 @@
 // ─────────────────────────────────────────
+//  EMBER BUSINESS SERVICES – Share Button
+// ─────────────────────────────────────────
+
+document.getElementById('shareBtn').addEventListener('click', function () {
+  const tooltip = document.getElementById('shareTooltip');
+
+  if (navigator.share) {
+    navigator.share({
+      title: 'Ember Business Services',
+      text: 'Dulce Dorado - Business Service Consultant',
+      url: window.location.href
+    }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(window.location.href).then(function () {
+      tooltip.classList.add('visible');
+      setTimeout(function () { tooltip.classList.remove('visible'); }, 2000);
+    });
+  }
+});
+
+// ─────────────────────────────────────────
 //  EMBER BUSINESS SERVICES – Save Contact (vCard 3.0)
 // ─────────────────────────────────────────
 
