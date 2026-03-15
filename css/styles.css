@@ -1,5 +1,5 @@
 /* ─────────────────────────────────────────
-   TESO GRAPHICS – Digital Business Card
+   EMBER BUSINESS SERVICES – Digital Business Card
    ───────────────────────────────────────── */
 
 *, *::before, *::after {
@@ -9,8 +9,8 @@
 }
 
 :root {
-  --beige:      #C4A882;
-  --dark:       #282420;
+  --beige:      #c4882f;
+  --dark:       #0f1729;
   --white:      #FFFFFF;
   --gray-circle:#E2DFDB;
   --gray-text:  #9B9289;
@@ -180,7 +180,7 @@ body {
   gap: 14px;
   padding: 18px 24px;
   background: var(--beige);
-  color: var(--text-dark);
+  color: var(--white);
   border: none;
   border-radius: 14px;
   font-family: var(--font-sans);
@@ -205,7 +205,7 @@ body {
 .btn-icon {
   width: 32px;
   height: 32px;
-  background: var(--text-dark);
+  background: var(--dark);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -237,7 +237,7 @@ body {
 }
 
 .footer a {
-  color: var(--text-dark);
+  color: var(--dark);
   text-decoration: none;
   font-weight: 700;
   transition: color var(--transition);

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────
-//  TESO GRAPHICS – Save Contact (vCard 3.0)
+//  EMBER BUSINESS SERVICES – Save Contact (vCard 3.0)
 // ─────────────────────────────────────────
 
 document.getElementById('saveContact').addEventListener('click', function () {
@@ -8,19 +8,19 @@ document.getElementById('saveContact').addEventListener('click', function () {
   const lines = [
     'BEGIN:VCARD',
     'VERSION:3.0',
-    'FN:Alirio Castaneda',
-    'N:Castaneda;Alirio;;;',
-    'ORG:TESO Graphics',
-    'TITLE:Graphic Designer | Digital & Print Specialist',
-    'TEL;TYPE=WORK,VOICE:(303) 525 3023',
-    'EMAIL;TYPE=INTERNET:studio@tesographics.com',
-    'URL:https://tesographics.com',
+    'FN:Dulce Dorado',
+    'N:Dorado;Dulce;;;',
+    'ORG:Ember Business Services',
+    'TITLE:Business Service Consultant',
+    'TEL;TYPE=WORK,VOICE:720-948-6244',
+    'EMAIL;TYPE=INTERNET:dulce@emberbservices.com',
+    'URL:https://emberbservices.com',
     'END:VCARD',
     ''          // trailing CRLF required by spec
   ];
 
   const vcard = lines.join('\r\n');
-  const filename = 'Alirio-Castaneda-TESO.vcf';
+  const filename = 'Dulce-Dorado-Ember.vcf';
 
   // iOS Safari does not honour the `download` attribute on blob URLs.
   // Opening the URL directly lets iOS intercept the text/vcard MIME type
