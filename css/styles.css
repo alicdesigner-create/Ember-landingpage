@@ -56,9 +56,39 @@ body {
     0 8px 32px rgba(0,0,0,0.10);
 }
 
-/* ── HERO ───────────────────────────────── */
+/* ── HERO SLIDER ────────────────────────── */
 
 .hero {
+  background: var(--white);
+  overflow: hidden;
+}
+
+.slider-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Slide 1: logo */
+.slide-logo {
   background: var(--white);
   display: flex;
   align-items: center;
@@ -71,6 +101,69 @@ body {
   max-width: 320px;
   height: auto;
   display: block;
+}
+
+/* Slides 2–10: services */
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 41, 0.55);
+}
+
+.slide-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slide-title {
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.slide-underline {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--beige);
+  border-radius: 2px;
+}
+
+/* Dots */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0 10px;
+  background: var(--white);
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ddd;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: var(--beige);
 }
 
 /* ── IDENTITY BAR ───────────────────────── */

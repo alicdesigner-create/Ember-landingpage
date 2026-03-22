@@ -1,4 +1,37 @@
 // ─────────────────────────────────────────
+//  EMBER BUSINESS SERVICES – Hero Slider
+// ─────────────────────────────────────────
+
+(function () {
+  var slider   = document.querySelector('.hero-slider');
+  var slides   = slider.querySelectorAll('.slide');
+  var dotsWrap = document.getElementById('sliderDots');
+  var total    = slides.length;
+  var current  = 0;
+
+  // Build dots dynamically
+  slides.forEach(function (_, i) {
+    var dot = document.createElement('span');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dotsWrap.appendChild(dot);
+  });
+
+  var dots = dotsWrap.querySelectorAll('.dot');
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = index;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  setInterval(function () {
+    goTo((current + 1) % total);
+  }, 3000);
+})();
+
+// ─────────────────────────────────────────
 //  EMBER BUSINESS SERVICES – Share Button
 // ─────────────────────────────────────────
 
