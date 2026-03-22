@@ -127,6 +127,12 @@ body {
   gap: 10px;
 }
 
+.slide-logo-small {
+  width: 90px;
+  height: auto;
+  display: block;
+}
+
 .slide-title {
   color: var(--white);
   font-family: var(--font-sans);
