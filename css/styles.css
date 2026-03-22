@@ -50,7 +50,7 @@ body {
   width: 100%;
   background: var(--white);
   border-radius: 24px;
-  overflow: hidden;
+  overflow: visible;
   box-shadow:
     0 1px 3px rgba(0,0,0,0.06),
     0 8px 32px rgba(0,0,0,0.10);
@@ -176,8 +176,31 @@ body {
 
 .identity {
   background: var(--dark);
-  padding: 14px 20px 16px;
-  text-align: center;
+  padding: 14px 24px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  overflow: visible;
+  position: relative;
+}
+
+.identity-photo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--dark);
+  flex-shrink: 0;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  position: relative;
+  z-index: 1;
+}
+
+.identity-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .name {
@@ -185,7 +208,6 @@ body {
   font-weight: 700;
   color: var(--white);
   letter-spacing: 0.01em;
-  margin-bottom: 3px;
 }
 
 .title {
